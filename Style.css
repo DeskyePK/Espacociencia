@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Press Start 2P';font-size: 22px;
+}
+
+.Container{
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+     
+}
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.comandos {
+    grid-gap: 20px;
+    display: grid;
+}
+
+
+a    {
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a:visited   {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
