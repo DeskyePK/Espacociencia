@@ -16,7 +16,7 @@
         
         <div class="comandos">
 
-            <img src="logoe.png">
+            <img src="Logoe.png">
             <a href="Espaco.html">Iniciar</a>
             <a href="Sobre.html">&nbsp;Sobre </a>
         </div>
@@ -38,3 +38,23 @@
    });
  }
          </script>
+
+<script>
+   
+    function createStars() {
+        const totalStars = 100; 
+        const body = document.querySelector('body');
+        
+        for (let i = 0; i < totalStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.left = Math.random() * 100 + 'vw';
+            star.style.animationDelay = Math.random() + 's';
+            body.appendChild(star);
+        }
+    }
+    
+    createStars(); 
+</script>
+
